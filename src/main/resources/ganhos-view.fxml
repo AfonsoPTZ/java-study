@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="GanhosController"
+      styleClass="tela-app"
+      stylesheets="@/style.css">
+
+    <HBox styleClass="navbar" spacing="10">
+        <Button text="Ganhos" onAction="#irParaGanhos" styleClass="nav-btn, nav-ativo"/>
+        <Button text="Despesas" onAction="#irParaDespesas" styleClass="nav-btn"/>
+        <Button text="Resumo" onAction="#irParaResumo" styleClass="nav-btn"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="Sair" onAction="#sair" styleClass="nav-btn, nav-sair"/>
+    </HBox>
+
+    <VBox styleClass="container" spacing="15">
+        <Label text="Cadastrar Ganho" styleClass="titulo"/>
+        <TextField fx:id="descricaoField" promptText="Descrição" styleClass="campo"/>
+        <TextField fx:id="valorField" promptText="Valor (ex: 1500.00)" styleClass="campo"/>
+        <Button text="Adicionar Ganho" onAction="#adicionarGanho" styleClass="botao" maxWidth="Infinity"/>
+    </VBox>
+
+</VBox>

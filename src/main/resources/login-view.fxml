@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+    fx:controller="LoginController"
+    styleClass="tela-auth"
+    alignment="CENTER"
+    stylesheets="@/style.css">
+
+  <VBox styleClass="card-auth" spacing="12" maxWidth="360">
+    <padding>
+      <Insets top="28" right="28" bottom="28" left="28"/>
+    </padding>
+
+    <Label text="Controle Financeiro" styleClass="titulo"/>
+    <Label text="Email"/>
+    <TextField fx:id="emailField" promptText="seu@email.com" styleClass="campo"/>
+    <Label text="Senha"/>
+    <PasswordField fx:id="senhaField" promptText="••••••" styleClass="campo"/>
+    <Label fx:id="erroLabel" styleClass="erro"/>
+    <Button text="Entrar" onAction="#fazerLogin" styleClass="botao" maxWidth="Infinity"/>
+    <Button text="Não tem conta? Crie uma aqui" onAction="#irParaCadastro" styleClass="botao-link" wrapText="true"/>
+  </VBox>
+
+</VBox>

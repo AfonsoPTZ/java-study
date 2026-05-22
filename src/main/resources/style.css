@@ -1,0 +1,156 @@
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.tela-app,
+.tela-auth {
+    -fx-background-color: linear-gradient(to bottom right, #020617, #0f172a 48%, #111827);
+    -fx-padding: 28;
+    -fx-spacing: 18;
+}
+
+.tela-auth {
+    -fx-alignment: center;
+}
+
+.card-auth,
+.container {
+    -fx-background-color: rgba(15, 23, 42, 0.94);
+    -fx-background-radius: 24;
+    -fx-border-color: rgba(148, 163, 184, 0.16);
+    -fx-border-radius: 24;
+    -fx-effect: dropshadow(gaussian, rgba(2, 6, 23, 0.45), 30, 0.18, 0, 12);
+    -fx-padding: 28;
+    -fx-spacing: 14;
+}
+
+.card-auth .label,
+.container .label {
+    -fx-text-fill: #e2e8f0;
+    -fx-font-size: 13px;
+}
+
+.titulo {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f8fafc;
+    -fx-padding: 0 0 10 0;
+}
+
+.campo {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: #f8fafc;
+    -fx-prompt-text-fill: #94a3b8;
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(148, 163, 184, 0.24);
+    -fx-border-radius: 14;
+    -fx-padding: 11 14 11 14;
+}
+
+.campo:focused {
+    -fx-border-color: #38bdf8;
+    -fx-background-color: rgba(56, 189, 248, 0.08);
+}
+
+.botao,
+.botao-secundario,
+.botao-link,
+.nav-btn {
+    -fx-cursor: hand;
+}
+
+.botao {
+    -fx-background-color: linear-gradient(to right, #0ea5e9, #2563eb);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+    -fx-padding: 12 18 12 18;
+}
+
+.botao:hover {
+    -fx-background-color: linear-gradient(to right, #38bdf8, #3b82f6);
+}
+
+.botao-secundario {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cbd5e1;
+    -fx-border-color: rgba(148, 163, 184, 0.28);
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 12 18 12 18;
+}
+
+.botao-secundario:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+}
+
+.botao-link {
+    -fx-background-color: transparent;
+    -fx-text-fill: #7dd3fc;
+    -fx-font-weight: bold;
+    -fx-padding: 6 0 0 0;
+    -fx-underline: true;
+}
+
+.botao-link:hover {
+    -fx-text-fill: #bae6fd;
+}
+
+.erro {
+    -fx-text-fill: #fb7185;
+    -fx-font-size: 12px;
+}
+
+.navbar {
+    -fx-background-color: rgba(15, 23, 42, 0.92);
+    -fx-background-radius: 18;
+    -fx-border-color: rgba(148, 163, 184, 0.16);
+    -fx-border-radius: 18;
+    -fx-padding: 12 16 12 16;
+    -fx-alignment: center-left;
+    -fx-spacing: 8;
+}
+
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cbd5e1;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-padding: 10 14 10 14;
+}
+
+.nav-btn:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: white;
+}
+
+.nav-ativo {
+    -fx-background-color: rgba(14, 165, 233, 0.16);
+    -fx-text-fill: #e0f2fe;
+}
+
+.nav-sair {
+    -fx-text-fill: #fda4af;
+}
+
+.nav-sair:hover {
+    -fx-background-color: rgba(251, 113, 133, 0.12);
+}
+
+.resumo-ganho {
+    -fx-text-fill: #4ade80;
+    -fx-font-size: 16px;
+}
+
+.resumo-despesa {
+    -fx-text-fill: #fb7185;
+    -fx-font-size: 16px;
+}
+
+.resumo-saldo {
+    -fx-text-fill: #7dd3fc;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
